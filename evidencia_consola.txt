@@ -1,0 +1,83 @@
+
+=== SISTEMA DE GESTIÓN DE ESTUDIANTES ===
+
+--- Listado completo ---
+1. Andrés - Ingeniería de Sistemas - Semestre 5 - Promedio 4.2
+2. Laura - Administración - Semestre 4 - Promedio 3.8
+3. Carlos - Ingeniería de Sistemas - Semestre 7 - Promedio 2.9
+4. Mariana - Contaduría - Semestre 6 - Promedio 4.5
+5. Juan - Ingeniería de Sistemas - Semestre 3 - Promedio 3.2
+6. Sofía - Administración - Semestre 8 - Promedio 4.7
+7. Daniel - Contaduría - Semestre 9 - Promedio 2.7
+8. Valentina - Ingeniería de Sistemas - Semestre 5 - Promedio 3.9
+9. Sebastián - Administración - Semestre 6 - Promedio 3.4
+10. Camila - Contaduría - Semestre 4 - Promedio 4.1
+
+--- Buscar por ID 6 ---
+{
+  id: 6,
+  nombre: 'Sofía',
+  edad: 23,
+  carrera: 'Administración',
+  semestre: 8,
+  promedio: 4.7
+}
+
+--- Buscar por ID 999 ---
+El estudiante no fue encontrado
+
+--- Estudiantes de Ingeniería de Sistemas ---
+ - Andrés
+ - Carlos
+ - Juan
+ - Valentina
+
+--- Conteo por carrera ---
+Ingeniería de Sistemas: 4
+Administración: 3
+Contaduría: 3
+
+--- Mayores de 22 años ---
+ - Carlos (24 años)
+ - Sofía (23 años)
+ - Daniel (25 años)
+========== REPORTE ACADÉMICO ==========
+
+Total de estudiantes: 10
+Estudiantes aprobados: 8
+Estudiantes reprobados: 2
+Promedio general: 3.74
+Mejor estudiante: Sofía - 4.7
+Estudiante con menor promedio: Daniel - 2.7
+
+========================================
+
+===== RANKING =====
+
+1. Sofía - 4.7
+2. Mariana - 4.5
+3. Andrés - 4.2
+4. Camila - 4.1
+5. Valentina - 3.9
+6. Laura - 3.8
+7. Sebastián - 3.4
+8. Juan - 3.2
+9. Carlos - 2.9
+10. Daniel - 2.7
+
+RESPUESTA PREGUNTA FINAL:
+Dividir el programa en funciones permite reutilizar código, hacerlo más
+legible y organizado, facilitar la depuración y el mantenimiento, que cada
+función tenga una responsabilidad clara y probar cada parte de forma independiente.
+
+Estudiantes aprobados:
+ - Andrés (promedio 4.2)
+ - Laura (promedio 3.8)
+ - Mariana (promedio 4.5)
+ - Juan (promedio 3.2)
+ - Sofía (promedio 4.7)
+ - Valentina (promedio 3.9)
+ - Sebastián (promedio 3.4)
+ - Camila (promedio 4.1)
+
+Servidor Express escuchando en http://localhost:3000
