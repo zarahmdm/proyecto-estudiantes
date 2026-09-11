@@ -1,6 +1,4 @@
-
-=== SISTEMA DE GESTIÓN DE ESTUDIANTES ===
-
+.....SISTEMA DE GESTIÓN DE ESTUDIANTES .....
 --- Listado completo ---
 1. Andrés - Ingeniería de Sistemas - Semestre 5 - Promedio 4.2
 2. Laura - Administración - Semestre 4 - Promedio 3.8
@@ -48,7 +46,7 @@ Contaduría: 3
  - Valentina (21 años)
  - Sebastián (22 años)
  - Camila (20 años)
-========== REPORTE ACADÉMICO ==========
+---------- REPORTE ACADÉMICO ----------
 
 Total de estudiantes: 10
 Estudiantes aprobados: 8
@@ -57,9 +55,9 @@ Promedio general: 3.74
 Mejor estudiante: Sofía - 4.7
 Estudiante con menor promedio: Daniel - 2.7
 
-========================================
+---------------------------------------
 
-===== RANKING =====
+----- RANKING -----
 
 1. Sofía - 4.7
 2. Mariana - 4.5
