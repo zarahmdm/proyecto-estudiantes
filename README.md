@@ -34,6 +34,8 @@ PARA EJECUTAR
 
 CONTENIDOS
 
+(Rutas más abajo)
+
 1.- app.js 
 
   *Este es el archivo donde está el código principal + el reto adicional*
@@ -85,3 +87,27 @@ CONTENIDOS
 
   *Sirve para guardar las versiones exactas de express + los paquetes internos, así cuando*
   *querramos instalarlo en otracomputadora sale identico*
+
+--------------------------------------------------------------------------------------------------
+
+RUTAS PARA EL LOCAL HOST
+
+(Estas se colocan después de *https://localhost:3000*)
+
+    GET /estudiantes                    -> listar todos los estudiantes
+    GET /estudiantes/:id                -> buscar por ID
+    GET /estudiantes/carrera/:carrera   -> buscar por carrera
+    GET /aprobados                      -> promedio menor que 3.0
+    GET /reprobados                     -> promedio mayor que 3.0
+    GET /promedio-general               -> promedio entre todos los estudiantes
+    GET /mejor                          -> mejor estudiante
+    GET /peor                           -> menor promedio
+    GET /conteo-carreras                -> contar estudiantes por carrera
+    GET /semestre/:semestre             -> buscar cantidad de estudiantes por semestre
+    GET /edad/:edad                     -> estudiantes mayores de edad 
+    GET /reporte                        -> reporte general
+    GET /ranking                        -> ranking de los estudiantes por promedio
+
+NOTA INTERNA: Se ignora el GET.
+
+------------------------------------------------------------------------------------------------
