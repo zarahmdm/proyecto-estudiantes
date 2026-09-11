@@ -37,10 +37,17 @@ Ingeniería de Sistemas: 4
 Administración: 3
 Contaduría: 3
 
---- Mayores de 22 años ---
+--- Mayores de edad (18 o más) ---
+ - Andrés (21 años)
+ - Laura (20 años)
  - Carlos (24 años)
+ - Mariana (22 años)
+ - Juan (19 años)
  - Sofía (23 años)
  - Daniel (25 años)
+ - Valentina (21 años)
+ - Sebastián (22 años)
+ - Camila (20 años)
 ========== REPORTE ACADÉMICO ==========
 
 Total de estudiantes: 10

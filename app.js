@@ -121,11 +121,11 @@ function buscarPorSemestre(semestre) {
     return resultados;
 }
 
-// 11. Obtener estudiantes mayores de cierta edad
-function mayoresDeEdad(edad) {
+// 11. Obtener estudiantes mayores de edad (18 o más)
+function mayoresDeEdad() {
     const resultados = [];
     for (let i = 0; i < estudiantes.length; i++) {
-        if (estudiantes[i].edad > edad) {
+        if (estudiantes[i].edad >= 18) {
             resultados.push(estudiantes[i]);
         }
     }
@@ -208,8 +208,8 @@ for (const carrera in conteo) {
     console.log(carrera + ": " + conteo[carrera]);
 }
 console.log("");
-console.log("--- Mayores de 22 años ---");
-const mayores = mayoresDeEdad(22);
+console.log("--- Mayores de edad (18 o más) ---");
+const mayores = mayoresDeEdad();
 for (let i = 0; i < mayores.length; i++) {
     console.log(" - " + mayores[i].nombre + " (" + mayores[i].edad + " años)");
 }
@@ -230,7 +230,7 @@ const app = express();
 const PORT = 3000;
 
 app.get("/", (req, res) => {
-    res.send("Sistema de Gestión de Estudiantes. Rutas: /estudiantes, /estudiantes/:id, /estudiantes/carrera/:carrera, /aprobados, /reprobados, /promedio-general, /mejor, /peor, /conteo-carreras, /semestre/:semestre, /edad/:edad, /reporte, /ranking");
+    res.send("Sistema de Gestión de Estudiantes. Rutas: /estudiantes, /estudiantes/:id, /estudiantes/carrera/:carrera, /aprobados, /reprobados, /promedio-general, /mejor, /peor, /conteo-carreras, /semestre/:semestre, /mayores-de-edad, /reporte, /ranking");
 });
 
 app.get("/estudiantes", (req, res) => res.json(listarEstudiantes()));
@@ -266,10 +266,9 @@ app.get("/semestre/:semestre", (req, res) => {
     res.json(resultados.length > 0 ? resultados : "No se encontraron estudiantes de ese semestre");
 });
 
-app.get("/edad/:edad", (req, res) => {
-    const edad = parseInt(req.params.edad, 10);
-    const resultados = mayoresDeEdad(edad);
-    res.json(resultados.length > 0 ? resultados : "No hay estudiantes mayores de esa edad");
+app.get("/mayores-de-edad", (req, res) => {
+    const resultados = mayoresDeEdad();
+    res.json(resultados.length > 0 ? resultados : "No hay estudiantes mayores de edad");
 });
 
 app.get("/reporte", (req, res) => {
