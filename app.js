@@ -22,6 +22,7 @@ const estudiantes = [
 ];
 
 //Función para listar estudiantes
+//Sirve para recorrer el array y copia lo que tenga
 function listarEstudiantes() {
     const lista = [];
     for (let i = 0; i < estudiantes.length; i++) {
@@ -31,6 +32,7 @@ function listarEstudiantes() {
 }
 
 //Función para buscar por ID
+//Busca el dato que coinsida con el parámetro
 function buscarPorId(id) {
     for (let i = 0; i < estudiantes.length; i++) {
         if (estudiantes[i].id === id) {
@@ -41,6 +43,7 @@ function buscarPorId(id) {
 }
 
 //Función para buscar estudiantes por carrera
+//Busca en el array y agrupa todos a los que le coinsida la carrera
 function buscarPorCarrera(carrera) {
     const resultados = [];
     for (let i = 0; i < estudiantes.length; i++) {
@@ -52,6 +55,7 @@ function buscarPorCarrera(carrera) {
 }
 
 //Función para obtener estudiantes aprobados
+//Saca los datos donde el promedio es menor que tres
 function obtenerAprobados() {
     const aprobados = [];
     for (let i = 0; i < estudiantes.length; i++) {
@@ -63,6 +67,7 @@ function obtenerAprobados() {
 }
 
 //Función para obtener estudiantes reprobados
+//Saca los datos donde el promedio es mayor que tres
 function obtenerReprobados() {
     const reprobados = [];
     for (let i = 0; i < estudiantes.length; i++) {
@@ -105,6 +110,7 @@ function menorPromedio() {
 }
 
 //Función para contar cuantos estudiantes hay por carrera
+//Si la carrera no existe se crea con valor de uno, pero si ya existe le suma uno
 function contarPorCarrera() {
     const conteo = {};
     for (let i = 0; i < estudiantes.length; i++) {
@@ -141,6 +147,7 @@ function mayoresDeEdad() {
 }
 
 //Función para crear un reporte general
+//Llama las funciones anteriores para hacer el reporte
 function generarReporte() {
     console.log("---------- REPORTE ACADÉMICO ----------");
     console.log("");
@@ -303,5 +310,6 @@ const resumenFunciones = filtrarPorAprobados();
 console.log("\n" + resumenFunciones);
 
 //Pregunta final
-//Cuando dividimos el código en funciones, después lo podemos reutilizar, es más organizado y así también cada parte tiene su propia
-//tarea entonces cada una se puede trabajar de manera independiente.
+//Cuando dividimos el código en funciones, después lo podemos reutilizar, 
+//es más organizado y así también cada parte tiene su propia tarea entonces cada una se puede trabajar 
+//de manera independiente.
