@@ -3,6 +3,34 @@
 -> GESTIÓN DE ESTUDIANTES CON NODE.js Y EXPRESS
 -------------------------------------------------------------
 
+PARA EJECUTAR
+
+1.- Se debe tener previamente instalado Node.js.
+
+2.- Descargar el proyecto desde la terminal a través de
+
+     *git clone https://github.com/zarahmdm/proyecto-estudiantes*
+     
+     y luego ejecutar 
+     
+     *cd proyecto-estudiantes*.
+     
+3.- Instalar Express si anteriormente no se habia instalado.
+
+     Con:
+
+     *npm install*
+
+     (Acá se debería instalar lo que dice el archivo *package.json*).
+
+4.- Se ejecuta *node app.js*.
+
+5.- Debe aparecer toda información de *app.js* + el link para el local host (Express).
+
+(Más info en el texto de abajo)
+
+------------------------------------------------------------------------------------
+
 CONTENIDOS
 
 1.- app.js 
