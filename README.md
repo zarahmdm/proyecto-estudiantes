@@ -23,11 +23,12 @@ PARA EJECUTAR
 
      (Acá se debería instalar lo que dice el archivo *package.json*).
 
-4.- Se ejecuta *node app.js*.
+4.- Se ejecuta *node app.js*, este se puede usar todas las veces que queramos
+    volver a hacer el proceso.
 
 5.- Debe aparecer toda información de *app.js* + el link para el local host (Express).
 
-(Más info en el texto de abajo)
+(Más info en el texto sobre los contenidos y rutas para el local host abajo)
 
 ------------------------------------------------------------------------------------
 
@@ -35,8 +36,7 @@ CONTENIDOS
 
 1.- app.js 
 
-  *Este es el archivo donde está el código principal + el reto adicional + comando para*
-  *la consola + rutas para las funciones dentro del local host*
+  *Este es el archivo donde está el código principal + el reto adicional*
   
   - ¿Qué hace este código?
   
@@ -69,13 +69,12 @@ CONTENIDOS
 
 2.- CONSOLA
 
-  *En este archivo se encuentra la información que debería aparecer cuando ejecutamos "app.js"*
-  *+ El link hacia el local host (express)*
+  *En este archivo se encuentra la información que debería aparecer cuando ejecutamos "app.js"**
 
 3.- pruebasLocalHost.json
 
   *Es este archivo se encuentra la información que debería aparecer cuando hacemos busquedas con*
-  *las rutas dentro del local host*
+  *las rutas para el local host*
 
 4.- package.json
 
