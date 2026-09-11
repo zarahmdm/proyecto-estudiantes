@@ -1,0 +1,16 @@
+{
+  "name": "proyecto-estudiantes",
+  "version": "1.0.0",
+  "description": "Sistema de gestion de estudiantes universitarios con Node.js y Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
