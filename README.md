@@ -23,10 +23,10 @@ PARA EJECUTAR
 
      (Acá se debería instalar lo que dice el archivo *package.json*).
 
-4.- Se ejecuta *node app.js*, este se puede usar todas las veces que queramos
+4.- Se ejecuta *node aca_pr_av.js*, este se puede usar todas las veces que queramos
     volver a hacer el proceso.
 
-5.- Debe aparecer toda información de *app.js* + el link para el local host (Express).
+5.- Debe aparecer toda información de *aca_pr_av.js* + el link para el local host (Express).
 
 (Más info en el texto sobre los contenidos y rutas para el local host abajo)
 
@@ -36,7 +36,7 @@ CONTENIDOS
 
 (Rutas más abajo)
 
-1.- app.js 
+1.- aca_pr_av.js 
 
   *Este es el archivo donde está el código principal + el reto adicional*
   
@@ -71,7 +71,7 @@ CONTENIDOS
 
 2.- CONSOLA
 
-  *En este archivo se encuentra la información que debería aparecer cuando ejecutamos "app.js"**
+  *En este archivo se encuentra la información que debería aparecer cuando ejecutamos "aca_pr_av.js"**
 
 3.- pruebasLocalHost.json
 
@@ -94,19 +94,19 @@ RUTAS PARA EL LOCAL HOST
 
 (Estas se colocan después de *https://localhost:3000*)
 
-    GET /estudiantes                    -> listar todos los estudiantes
-    GET /estudiantes/:id                -> buscar por ID
-    GET /estudiantes/carrera/:carrera   -> buscar por carrera
-    GET /aprobados                      -> promedio menor que 3.0
-    GET /reprobados                     -> promedio mayor que 3.0
-    GET /promedio-general               -> promedio entre todos los estudiantes
-    GET /mejor                          -> mejor estudiante
-    GET /peor                           -> menor promedio
-    GET /conteo-carreras                -> contar estudiantes por carrera
-    GET /semestre/:semestre             -> buscar cantidad de estudiantes por semestre
-    GET /edad/:edad                     -> estudiantes mayores de edad 
-    GET /reporte                        -> reporte general
-    GET /ranking                        -> ranking de los estudiantes por promedio
+    GET /estudiantes                    (listar todos los estudiantes)
+    GET /estudiantes/:id                (buscar por ID)
+    GET /estudiantes/carrera/:carrera   (buscar por carrera)
+    GET /estudiantes-aprobados          (promedio menor que 3.0)
+    GET /estudiantes-reprobados         (promedio mayor que 3.0)
+    GET /promedio-general               (promedio entre todos los estudiantes)
+    GET /mejor-estudiante               (mejor estudiante)
+    GET /peor-estudiante                (menor promedio)
+    GET /estudiantes-por-carrera        (contar estudiantes por carrera)
+    GET /semestre/:semestre             (buscar cantidad de estudiantes por semestre)
+    GET /mayores-de-edad/:edad          (estudiantes mayores de edad)
+    GET /reporte                        (reporte general)
+    GET /ranking                        (ranking de los estudiantes por promedio)
 
 NOTA INTERNA: Se ignora el GET.
 
