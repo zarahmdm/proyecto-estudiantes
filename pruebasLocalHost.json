@@ -2,7 +2,7 @@
 
 //Se abre el link para  el local host
 
-Sistema de Gestión de Estudiantes. Rutas: /estudiantes, /estudiantes/:id, /estudiantes/carrera/:carrera, /aprobados, /reprobados, /promedio-general, /mejor, /peor, /conteo-carreras, /semestre/:semestre, /mayores-de-edad, /reporte, /ranking
+Sistema de Gestión de Estudiantes. Rutas: /estudiantes, /estudiantes/:id, /estudiantes/carrera/:carrera, /estudiantes-aprobados, /estudiantes-reprobados, /promedio-general, /mejor-estudiante, /peor-estudiante, /estudiantes-por-carrera, /semestre/:semestre, /mayores-de-edad, /reporte, /ranking
 
 //Ruta /estudiantes
 
@@ -140,7 +140,7 @@ Sistema de Gestión de Estudiantes. Rutas: /estudiantes, /estudiantes/:id, /estu
   }
 ]
 
-//Ruta /aprobados
+//Ruta /estudiantes-aprobados
 
 [
   {
@@ -209,7 +209,7 @@ Sistema de Gestión de Estudiantes. Rutas: /estudiantes, /estudiantes/:id, /estu
   }
 ]
 
-//Ruta /reprobados
+//Ruta /estudiantes-reprobados
 
 [
   {
@@ -236,7 +236,7 @@ Sistema de Gestión de Estudiantes. Rutas: /estudiantes, /estudiantes/:id, /estu
   "promedioGeneral": 3.74
 }
 
-//Ruta /mejor
+//Ruta /mejor-estudiante
 
 {
   "id": 6,
@@ -247,7 +247,7 @@ Sistema de Gestión de Estudiantes. Rutas: /estudiantes, /estudiantes/:id, /estu
   "promedio": 4.7
 }
 
-//Ruta /peor
+//Ruta /peor-estudiante
 
 {
   "id": 7,
@@ -258,7 +258,7 @@ Sistema de Gestión de Estudiantes. Rutas: /estudiantes, /estudiantes/:id, /estu
   "promedio": 2.7
 }
 
-//Ruta /conteo-carreras
+//Ruta /estudiantes-por-carrera
 
 {
   "Ingeniería de Sistemas": 4,
