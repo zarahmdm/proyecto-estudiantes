@@ -309,7 +309,7 @@ app.get("/ranking", (req, res) => {
 const resumenFunciones = filtrarPorAprobados();
 console.log("\n" + resumenFunciones);
 
-//Pregunta final
+//Pregunta final 
 //Cuando dividimos el código en funciones, después lo podemos reutilizar, 
 //es más organizado y así también cada parte tiene su propia tarea entonces cada una se puede trabajar 
 //de manera independiente.
