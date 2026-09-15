@@ -1,5 +1,3 @@
-//La consola debería mostrar esto:
-
 .....SISTEMA DE GESTIÓN DE ESTUDIANTES .....
 --- Listado completo ---
 1. Andrés - Ingeniería de Sistemas - Semestre 5 - Promedio 4.2
