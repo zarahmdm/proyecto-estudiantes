@@ -2,9 +2,9 @@
   "name": "proyecto-estudiantes",
   "version": "1.0.0",
   "description": "Sistema de gestion de estudiantes universitarios con Node.js y Express",
-  "main": "app.js",
+  "main": "aca_pr_av.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node aca_pr_av.js"
   },
   "keywords": [],
   "author": "",
