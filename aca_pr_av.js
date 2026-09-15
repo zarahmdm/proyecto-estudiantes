@@ -25,8 +25,8 @@ const estudiantes = [
 //Sirve para recorrer el array y copia lo que tenga
 function listarEstudiantes() {
     const lista = [];
-    for (let i = 0; i < estudiantes.length; i++) {
-        lista.push(estudiantes[i]);
+    for (let indice = 0; indice < estudiantes.length; indice++) {
+        lista.push(estudiantes[indice]);
     }
     return lista;
 }
@@ -34,9 +34,9 @@ function listarEstudiantes() {
 //Función para buscar por ID
 //Busca el dato que coinsida con el parámetro
 function buscarPorId(id) {
-    for (let i = 0; i < estudiantes.length; i++) {
-        if (estudiantes[i].id === id) {
-            return estudiantes[i];
+    for (let indice = 0; indice < estudiantes.length; indice++) {
+        if (estudiantes[indice].id === id) {
+            return estudiantes[indice];
         }
     }
     return "El estudiante no fue encontrado";
@@ -46,9 +46,9 @@ function buscarPorId(id) {
 //Busca en el array y agrupa todos a los que le coinsida la carrera
 function buscarPorCarrera(carrera) {
     const resultados = [];
-    for (let i = 0; i < estudiantes.length; i++) {
-        if (estudiantes[i].carrera === carrera) {
-            resultados.push(estudiantes[i]);
+    for (let indice = 0; indice < estudiantes.length; indice++) {
+        if (estudiantes[indice].carrera === carrera) {
+            resultados.push(estudiantes[indice]);
         }
     }
     return resultados;
@@ -58,9 +58,9 @@ function buscarPorCarrera(carrera) {
 //Saca los datos donde el promedio es menor que tres
 function obtenerAprobados() {
     const aprobados = [];
-    for (let i = 0; i < estudiantes.length; i++) {
-        if (estudiantes[i].promedio >= 3.0) {
-            aprobados.push(estudiantes[i]);
+    for (let indice = 0; indice < estudiantes.length; indice++) {
+        if (estudiantes[indice].promedio >= 3.0) {
+            aprobados.push(estudiantes[indice]);
         }
     }
     return aprobados;
@@ -70,9 +70,9 @@ function obtenerAprobados() {
 //Saca los datos donde el promedio es mayor que tres
 function obtenerReprobados() {
     const reprobados = [];
-    for (let i = 0; i < estudiantes.length; i++) {
-        if (estudiantes[i].promedio < 3.0) {
-            reprobados.push(estudiantes[i]);
+    for (let indice = 0; indice < estudiantes.length; indice++) {
+        if (estudiantes[indice].promedio < 3.0) {
+            reprobados.push(estudiantes[indice]);
         }
     }
     return reprobados;
@@ -81,8 +81,8 @@ function obtenerReprobados() {
 //Función para calcular el promedio en general
 function calcularPromedioGeneral() {
     let suma = 0;
-    for (let i = 0; i < estudiantes.length; i++) {
-        suma += estudiantes[i].promedio;
+    for (let indice = 0; indice < estudiantes.length; indice++) {
+        suma += estudiantes[indice].promedio;
     }
     return estudiantes.length === 0 ? 0 : suma / estudiantes.length;
 }
@@ -90,9 +90,9 @@ function calcularPromedioGeneral() {
 //Función para encontrar al mejor estudiante
 function mejorEstudiante() {
     let mejor = estudiantes[0];
-    for (let i = 1; i < estudiantes.length; i++) {
-        if (estudiantes[i].promedio > mejor.promedio) {
-            mejor = estudiantes[i];
+    for (let indice = 1; indice < estudiantes.length; indice++) {
+        if (estudiantes[indice].promedio > mejor.promedio) {
+            mejor = estudiantes[indice];
         }
     }
     return mejor;
@@ -101,9 +101,9 @@ function mejorEstudiante() {
 //Función para encontrar al estudiante con peor promedio
 function menorPromedio() {
     let menor = estudiantes[0];
-    for (let i = 1; i < estudiantes.length; i++) {
-        if (estudiantes[i].promedio < menor.promedio) {
-            menor = estudiantes[i];
+    for (let indice = 1; indice < estudiantes.length; indice++) {
+        if (estudiantes[indice].promedio < menor.promedio) {
+            menor = estudiantes[indice];
         }
     }
     return menor;
@@ -113,8 +113,8 @@ function menorPromedio() {
 //Si la carrera no existe se crea con valor de uno, pero si ya existe le suma uno
 function contarPorCarrera() {
     const conteo = {};
-    for (let i = 0; i < estudiantes.length; i++) {
-        const carrera = estudiantes[i].carrera;
+    for (let indice = 0; indice < estudiantes.length; indice++) {
+        const carrera = estudiantes[indice].carrera;
         if (conteo[carrera] === undefined) {
             conteo[carrera] = 1;
         } else {
@@ -127,9 +127,9 @@ function contarPorCarrera() {
 //Función para buscar estudiantes por semestre
 function buscarPorSemestre(semestre) {
     const resultados = [];
-    for (let i = 0; i < estudiantes.length; i++) {
-        if (estudiantes[i].semestre === semestre) {
-            resultados.push(estudiantes[i]);
+    for (let indice = 0; indice < estudiantes.length; indice++) {
+        if (estudiantes[indice].semestre === semestre) {
+            resultados.push(estudiantes[indice]);
         }
     }
     return resultados;
@@ -138,9 +138,9 @@ function buscarPorSemestre(semestre) {
 //Función para obtener estudiantes que son mayores de edad
 function mayoresDeEdad() {
     const resultados = [];
-    for (let i = 0; i < estudiantes.length; i++) {
-        if (estudiantes[i].edad >= 18) {
-            resultados.push(estudiantes[i]);
+    for (let indice = 0; indice < estudiantes.length; indice++) {
+        if (estudiantes[indice].edad >= 18) {
+            resultados.push(estudiantes[indice]);
         }
     }
     return resultados;
@@ -164,26 +164,26 @@ function generarReporte() {
 }
 
 //Reto - Ranking de mayor a menor promedio
-function rankingPorPromedio() {
+function ranking() {
     const copia = [];
-    for (let i = 0; i < estudiantes.length; i++) {
-        copia.push(estudiantes[i]);
+    for (let indice = 0; indice < estudiantes.length; indice++) {
+        copia.push(estudiantes[indice]);
     }
 
-    for (let i = 0; i < copia.length - 1; i++) {
-        for (let j = i + 1; j < copia.length; j++) {
-            if (copia[j].promedio > copia[i].promedio) {
-                const temporal = copia[i];
-                copia[i] = copia[j];
-                copia[j] = temporal;
+    for (let indice = 0; indice < copia.length - 1; indice++) {
+        for (let siguiente = indice + 1; siguiente < copia.length; siguiente++) {
+            if (copia[siguiente].promedio > copia[indice].promedio) {
+                const temporal = copia[indice];
+                copia[indice] = copia[siguiente];
+                copia[siguiente] = temporal;
             }
         }
     }
 
     console.log("----- RANKING -----");
     console.log("");
-    for (let i = 0; i < copia.length; i++) {
-        console.log((i + 1) + ". " + copia[i].nombre + " - " + copia[i].promedio);
+    for (let indice = 0; indice < copia.length; indice++) {
+        console.log((indice + 1) + ". " + copia[indice].nombre + " - " + copia[indice].promedio);
     }
 }
 
@@ -191,8 +191,8 @@ function rankingPorPromedio() {
 function filtrarPorAprobados() {
     const lista = obtenerAprobados();
     let texto = "Estudiantes aprobados:\n";
-    for (let i = 0; i < lista.length; i++) {
-        texto += " - " + lista[i].nombre + " (promedio " + lista[i].promedio + ")\n";
+    for (let indice = 0; indice < lista.length; indice++) {
+        texto += " - " + lista[indice].nombre + " (promedio " + lista[indice].promedio + ")\n";
     }
     return texto;
 }
@@ -201,8 +201,8 @@ function filtrarPorAprobados() {
 console.log(".....SISTEMA DE GESTIÓN DE ESTUDIANTES .....");
 console.log("--- Listado completo ---");
 const todos = listarEstudiantes();
-for (let i = 0; i < todos.length; i++) {
-    console.log(todos[i].id + ". " + todos[i].nombre + " - " + todos[i].carrera + " - Semestre " + todos[i].semestre + " - Promedio " + todos[i].promedio);
+for (let indice = 0; indice < todos.length; indice++) {
+    console.log(todos[indice].id + ". " + todos[indice].nombre + " - " + todos[indice].carrera + " - Semestre " + todos[indice].semestre + " - Promedio " + todos[indice].promedio);
 }
 console.log("");
 console.log("--- Buscar por ID 6 ---");
@@ -213,8 +213,8 @@ console.log(buscarPorId(999));
 console.log("");
 console.log("--- Estudiantes de Ingeniería de Sistemas ---");
 const ingenieria = buscarPorCarrera("Ingeniería de Sistemas");
-for (let i = 0; i < ingenieria.length; i++) {
-    console.log(" - " + ingenieria[i].nombre);
+for (let indice = 0; indice < ingenieria.length; indice++) {
+    console.log(" - " + ingenieria[indice].nombre);
 }
 console.log("");
 console.log("--- Conteo por carrera ---");
@@ -225,17 +225,17 @@ for (const carrera in conteo) {
 console.log("");
 console.log("--- Mayores de edad (18 o más) ---");
 const mayores = mayoresDeEdad();
-for (let i = 0; i < mayores.length; i++) {
-    console.log(" - " + mayores[i].nombre + " (" + mayores[i].edad + " años)");
+for (let indice = 0; indice < mayores.length; indice++) {
+    console.log(" - " + mayores[indice].nombre + " (" + mayores[indice].edad + " años)");
 }
 
 generarReporte();
 console.log("");
-rankingPorPromedio();
+ranking();
 
 //Aquí ponemos la información que se va a mandar para express
 app.get("/", (req, res) => {
-    res.send("Sistema de Gestión de Estudiantes. Rutas: /estudiantes, /estudiantes/:id, /estudiantes/carrera/:carrera, /aprobados, /reprobados, /promedio-general, /mejor, /peor, /conteo-carreras, /semestre/:semestre, /mayores-de-edad, /reporte, /ranking");
+    res.send("Sistema de Gestión de Estudiantes. Rutas: /estudiantes, /estudiantes/:id, /estudiantes/carrera/:carrera, /estudiantes-aprobados, /estudiantes-reprobados, /promedio-general, /mejor-estudiante, /peor-estudiante, /estudiantes-por-carrera, /semestre/:semestre, /mayores-de-edad, /reporte, /ranking");
 });
 
 app.get("/estudiantes", (req, res) => res.json(listarEstudiantes()));
@@ -251,19 +251,19 @@ app.get("/estudiantes/carrera/:carrera", (req, res) => {
     res.json(resultados.length > 0 ? resultados : "No se encontraron estudiantes de esa carrera");
 });
 
-app.get("/aprobados", (req, res) => res.json(obtenerAprobados()));
+app.get("/estudiantes-aprobados", (req, res) => res.json(obtenerAprobados()));
 
-app.get("/reprobados", (req, res) => res.json(obtenerReprobados()));
+app.get("/estudiantes-reprobados", (req, res) => res.json(obtenerReprobados()));
 
 app.get("/promedio-general", (req, res) => {
     res.json({ promedioGeneral: calcularPromedioGeneral() });
 });
 
-app.get("/mejor", (req, res) => res.json(mejorEstudiante()));
+app.get("/mejor-estudiante", (req, res) => res.json(mejorEstudiante()));
 
-app.get("/peor", (req, res) => res.json(menorPromedio()));
+app.get("/peor-estudiante", (req, res) => res.json(menorPromedio()));
 
-app.get("/conteo-carreras", (req, res) => res.json(contarPorCarrera()));
+app.get("/estudiantes-por-carrera", (req, res) => res.json(contarPorCarrera()));
 
 app.get("/semestre/:semestre", (req, res) => {
     const semestre = parseInt(req.params.semestre, 10);
@@ -291,15 +291,15 @@ app.get("/reporte", (req, res) => {
 
 app.get("/ranking", (req, res) => {
     const copia = [];
-    for (let i = 0; i < estudiantes.length; i++) {
-        copia.push(estudiantes[i]);
+    for (let indice = 0; indice < estudiantes.length; indice++) {
+        copia.push(estudiantes[indice]);
     }
-    for (let i = 0; i < copia.length - 1; i++) {
-        for (let j = i + 1; j < copia.length; j++) {
-            if (copia[j].promedio > copia[i].promedio) {
-                const temporal = copia[i];
-                copia[i] = copia[j];
-                copia[j] = temporal;
+    for (let indice = 0; indice < copia.length - 1; indice++) {
+        for (let siguiente = indice + 1; siguiente < copia.length; siguiente++) {
+            if (copia[siguiente].promedio > copia[indice].promedio) {
+                const temporal = copia[indice];
+                copia[indice] = copia[siguiente];
+                copia[siguiente] = temporal;
             }
         }
     }
